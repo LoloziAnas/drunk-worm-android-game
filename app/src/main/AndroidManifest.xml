@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DunkWorm">
         <activity
+            android:name=".ReviewActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
             android:name=".SettingsActivity"
             android:screenOrientation="landscape" />
         <activity
@@ -17,6 +21,7 @@
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
