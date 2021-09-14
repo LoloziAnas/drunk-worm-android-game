@@ -35,11 +35,10 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/ib_reply"
+            android:id="@+id/edt_feedback"
             android:layout_width="331dp"
             android:layout_height="57dp"
             android:layout_marginBottom="20dp"
-            android:autofillHints=""
             android:background="@drawable/bg_edit_text"
             android:fontFamily="@font/showcard_gothic"
             android:textColor="@color/purple_700"

@@ -32,19 +32,20 @@
             android:layout_marginBottom="20dp"
             android:background="@null"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_russa_logo" />
+            android:src="@drawable/bg_lang" />
 
         <ImageButton
-            android:id="@+id/ib_reply"
+            android:id="@+id/ib_sound"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:background="@null"
+            android:background="@drawable/ic_sound"
+            android:tag="0"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_sons" />
+             />
 
         <ImageButton
-            android:id="@+id/ib_share"
+            android:id="@+id/ib_music"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
