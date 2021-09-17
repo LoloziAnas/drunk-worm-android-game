@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DunkWorm">
+        <activity android:name=".GamePlayActivity"></activity>
         <activity
             android:name=".ReviewActivity"
             android:screenOrientation="landscape" />
-
         <activity
             android:name=".SettingsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GameActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".MainActivity"

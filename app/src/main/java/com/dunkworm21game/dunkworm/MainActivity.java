@@ -2,6 +2,7 @@ package com.dunkworm21game.dunkworm;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,9 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -27,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ImageView imageViewStart = findViewById(R.id.ib_start);
-        imageViewMessage.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, GameActivity.class);
+        imageViewStart .setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, GamePlayActivity.class);
             startActivity(intent);
         });
     }
