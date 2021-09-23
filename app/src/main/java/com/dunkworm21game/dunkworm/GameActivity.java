@@ -191,12 +191,14 @@ public class GameActivity extends Activity {
         }
 
         private void drawGame() {
+            Bitmap backgroundBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.bg_image);
+
+            canvas = new Canvas(backgroundBitmap);
             if (ourHolder.getSurface().isValid()) {
                 canvas = ourHolder.lockCanvas();
-                Bitmap backgroundBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.bg_image);
                 //background
-                canvas.drawBitmap(background, 0,0, null);
-                //canvas.drawColor(Color.BLACK);
+                //canvas.drawBitmap(backgroundBitmap, 0,0, null);
+                canvas.drawColor(Color.BLACK);
                 //Draw the snake
                 canvas.drawBitmap(headBitmap, snakeX[0] * blockSize, (snakeY[0] * blockSize) + topGap, paint);
 

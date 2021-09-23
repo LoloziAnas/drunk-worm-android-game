@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView imageViewStart = findViewById(R.id.ib_start);
         imageViewStart .setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, GamePlayActivity.class);
+            Intent intent = new Intent(MainActivity.this, GameActivity.class);
             startActivity(intent);
         });
     }
